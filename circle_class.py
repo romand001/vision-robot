@@ -25,9 +25,7 @@ class Circle:
     
     def is_equal(self, other_circle):
 
-        if abs(self.current_x - other_circle.current_x) > 50:
-            return False
-        elif abs(self.current_y - other_circle.current_y) > 50:
+        if abs(self.current_x - other_circle.current_x) > 50 or abs(self.current_y - other_circle.current_y) > 50:
             return False
         else:
             return True
